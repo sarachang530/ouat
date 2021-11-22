@@ -19,7 +19,7 @@
   }
 
   @include for-size(mobile) {
-    max-height: 50px;
+    height: 50px;
   }
   .header-nav {
     display: flex;

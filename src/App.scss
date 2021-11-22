@@ -26,6 +26,9 @@
     max-height: 580px;
     aspect-ratio: 4 / 3;
   }
+  @include for-size(mobile) {
+    margin-top: 50px;
+  }
 }
 
 .card-container {

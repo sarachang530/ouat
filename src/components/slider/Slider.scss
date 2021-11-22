@@ -10,16 +10,25 @@
   top: 50%;
   width: 100%;
   padding: 0 6rem;
+  @include for-size(mobile) {
+    padding-left: 2.5rem;
+  }
 
   h1 {
     font-size: 3.5rem;
-    width: 40rem;
+    max-width: 40rem;
     font-weight: normal;
     overflow-wrap: break-word;
     text-indent: 20rem;
     text-align: left;
     direction: rtl;
     margin: 0 0 0rem 0;
+    @include for-size(mobile) {
+      overflow-wrap: break-word;
+      text-indent: 0;
+      font-size: 1.75rem;
+      width: 70%;
+    }
   }
   h2 {
     font-size: 2rem;
@@ -30,12 +39,17 @@
     overflow-wrap: break-word;
     width: 23rem;
     font-weight: normal;
+    @include for-size(mobile) {
+      overflow-wrap: break-word;
+      text-indent: 0;
+      width: 70%;
+    }
   }
 }
 
 .carousel.carousel-slider {
   overflow: visible;
 }
-.control-dots {        
+.control-dots {
   margin: 0 0 -2em !important;
 }

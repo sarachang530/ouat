@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { apiProvider } from '../../api/api'
+import { apiProvider } from '../../api/api';
 import { useForm } from 'react-hook-form';
-import './footer.scss'
+import './footer.scss';
 
 export const SignupForm = () => {
-  const [success, setSuccess] = useState('')
+  const [success, setSuccess] = useState('');
   const {
     handleSubmit,
     register,
@@ -12,14 +12,16 @@ export const SignupForm = () => {
   } = useForm();
 
   const onSubmit = data => {
-    console.log({ data })
-    apiProvider.postData(data).then(res => {
-      setSuccess('Successful Sign up, Thank you.')
-    }).catch(err => {
-      console.log('err')
-    })
-  }
-
+    console.log({ data });
+    apiProvider
+      .postData(data)
+      .then(res => {
+        setSuccess('Successful Sign up, Thank you.');
+      })
+      .catch(err => {
+        console.log('err');
+      });
+  };
 
   return (
     <>
@@ -41,10 +43,11 @@ export const SignupForm = () => {
         <button className="btn" type="submit">
           SUBMIT
         </button>
-        {errors.email?.message && <span>{errors.email.message}</span>}
       </form>
-
-        <div className="success-msg"> {success} </div>
+      <div className="email-msg">
+        {errors.email?.message && <span>{errors.email.message}</span>}{' '}
+      </div>
+      <div className="email-msg"> {success} </div>
     </>
   );
 };

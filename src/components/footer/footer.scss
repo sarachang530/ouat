@@ -18,10 +18,10 @@
   align-content: center;
   margin: 2rem 0 2rem 0;
   font-family: 'ACaslonPro';
-  font-size: .6rem;
+  font-size: 0.6rem;
   font-weight: bold;
   text-transform: uppercase;
-  
+
   a {
     color: black;
     &:hover {
@@ -46,6 +46,6 @@
   height: 2.5rem;
   text-shadow: none;
 }
-.success-msg {
+.email-msg {
   text-align: center;
 }
