@@ -41,9 +41,10 @@ export const SignupForm = () => {
         <button className="btn" type="submit">
           SUBMIT
         </button>
-        {success}
         {errors.email?.message && <span>{errors.email.message}</span>}
       </form>
+
+        <div className="success-msg"> {success} </div>
     </>
   );
 };
