@@ -21,11 +21,8 @@ export const SignupForm = () => {
   }
 
 
-  // const ErrorMessage = ({ message }) => <p>{message}</p>;
-
   return (
     <>
-      {/* <SuccessMessage /> */}
       <form className="signup-form" onSubmit={handleSubmit(onSubmit)}>
         <input
           className="inputClass"

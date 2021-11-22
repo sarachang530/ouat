@@ -85,11 +85,3 @@ function App() {
 }
 
 export default App;
-
-/*
-  overflow: hidden;
-  max-width: 1440px;
-  position: relative;
-  margin: 0 -720px;
-  left: 50%;
-  */
