@@ -1,0 +1,48 @@
+@import '../../styles/mixins.scss';
+.carousel-container {
+  filter: brightness(75%);
+  // position: relative; 
+  // left: 50%;
+  // top: 0;
+  // margin-left: -50%;
+  // // width: 1440px;
+  // position: absolute;
+
+}
+.hero-text {
+  font-family: 'Springville';
+  color: white;
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  width: 100%;
+  padding: 0 6rem;
+
+  h1 {
+    font-size: 3.5rem;
+    width: 40rem;
+    font-weight: normal;
+    overflow-wrap: break-word;
+    text-indent: 20rem;
+    text-align: left;
+    direction: rtl;
+    margin: 0 0 0rem 0;
+  }
+  h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 0 0 0rem 0;
+  }
+  p {
+    overflow-wrap: break-word;
+    width: 23rem;
+    font-weight: normal;
+  }
+}
+
+.carousel.carousel-slider {
+  overflow: visible;
+}
+.control-dots {        
+  margin: 0 0 -2em !important;
+}

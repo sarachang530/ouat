@@ -1,0 +1,48 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  width: 350px;
+  margin: auto;
+  h4 {
+    font-family: 'ACaslonPro';
+    font-size: 1.1rem;
+    font-weight: normal;
+    text-align: center;
+  }
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 2rem 0 2rem 0;
+  font-family: 'ACaslonPro';
+  font-size: .6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+  a {
+    color: black;
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+.signup-form {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.inputClass {
+  width: 20rem;
+}
+.btn {
+  background: black;
+  color: white;
+  font-family: 'ACaslonPro';
+  width: 6rem;
+  height: 2.5rem;
+  text-shadow: none;
+}

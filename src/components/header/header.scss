@@ -1,0 +1,47 @@
+@import '../../styles/mixins.scss';
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto 0 auto;
+  height: $header_height;
+  @include for-size(large-desktop) {
+    width: 1440px;
+    left: 50%;  
+    margin-left: -720px;
+  }
+
+  @include for-size(mobile) {
+    max-height: 50px;
+  }
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  p {
+    margin: .5rem 0 .5rem;
+    text-align: center;
+    font-family: 'arial',;
+    font-size: .6rem;
+    padding: 0 1rem 0 0;
+  }
+}
+
+
+.logo-container {
+  width: 100%;
+  max-width: 100%;
+  padding: 2.5rem;
+  margin: 0 auto;
+}
